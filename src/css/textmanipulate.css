@@ -1,0 +1,73 @@
+/* universal */
+*{
+    margin: 5px; 
+}
+/* main parent */
+.txtparent{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: space-between;
+}
+/* childs of parent */
+/* child 1 */
+.txtchild{
+    border: 1px solid red;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+}
+.child1{
+    width: 30%;
+}
+/* for textarea box */
+/* .txtarea{
+    border: 1px solid green;
+} */
+.textareabox{
+    display: block;
+    width: 80%;
+    margin: 2px auto;
+    border-radius: 8px;
+}
+.txtareaheading{
+    width: 400px;
+    margin: 2px auto;
+    text-align: center;
+}
+/* for outputs */
+/* .textoutput{
+    border: 1px solid yellow;
+} */
+/* for buttons */
+.mainbutton{
+    /* border: 1px solid brown; */
+    display: flex;
+}
+.botn{
+    border-radius: 6px;
+    cursor: pointer;
+}
+/* child 2 */
+.child2{
+    width: 60%;
+}
+#headingpreview{
+    width: 300px;
+    margin: 2px auto;                                     /* when you use only auto it comes to center from left-right and from top-bottom as well check yourself. */
+    text-align: center;
+}
+.txtpreview{
+    border: solid 1px purple;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 100%;
+}
+/* child 3 */
+/* .rightsidetxt{
+
+} */
+.para{
+    border: 1px solid blueviolet;
+}

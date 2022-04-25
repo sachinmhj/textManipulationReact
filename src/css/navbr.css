@@ -1,0 +1,118 @@
+.onee{
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+/* navbar */
+ul{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    justify-content: space-evenly;
+    margin: 0px;
+    width:600px;
+    padding: 0px;
+}
+ul li{
+    list-style: none;
+    padding: 6px;
+}
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+/* hover */
+ul li a:hover{
+    color: green;
+}
+
+/* search-box */
+header input{
+    /* border: 2px solid red; */
+    font-size: 20px;
+    font-weight: bold;
+    width: 156px;
+    border-radius: 12px;
+} 
+
+/* header */
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 5px;
+    border:2px solid brown;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* image */
+img{
+    margin-left: 76px;
+    width: 66px;
+    height: 50px;
+}
+
+/* hide button */
+/* button{
+    position: absolute;
+    top: 56px;
+    left: 8px;
+    height: 42px;
+    border-radius: 18px;
+} */
+
+/* body */
+.bod{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+.par{
+    margin:5px;
+    font-size: 14px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding:60px 200px;
+}
+h1{
+    text-align: center;
+    width: 300px;
+    margin: auto;
+    font-size: 60px;
+    font-weight: bold;
+}
+.btn{
+    display: block;
+    width: 119px;
+    margin: auto;
+    height: 62px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn:hover{
+    display: block;
+    width: 119px;
+    margin: auto;
+    height: 62px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(88, 88, 87);
+    background-color: rgb(213, 236, 236);
+}
+
+/* rightside layout */
+.car{
+    margin: 0px;
+    padding: 10px;
+    line-height: 430px;
+    border: 2px solid brown;
+    border-radius: 10px;
+    height: 96vh;
+}
