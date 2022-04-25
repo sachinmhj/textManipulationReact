@@ -14,7 +14,7 @@ export default function OrgnavOrgnav(props) {
                         <li><a href="/Home" className="anchorsame" style={props.dk}>Contact</a></li>
                     </ul>
                     <div className="mainbox">
-                        <p id="unik">Enable Darkmode of your choice</p>
+                        <p id="unik">Enable Darkmode Of Your Choice</p>
                         <div className="boxes">
                             <button id="box1" className="samebox" onClick={props.ck1}></button>
                             <button id="box2" className="samebox" onClick={props.ck2}></button>
