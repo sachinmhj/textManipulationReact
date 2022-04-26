@@ -6,7 +6,7 @@ export default function OrgnavOrgnav(props) {
                 <div className="im">
                     <img src="https://pngimg.com/uploads/circle/circle_PNG50.png" alt="no" />
                 </div>
-                <div className="nav"style={props.dk}>
+                <div className="nav" style={props.dk}>
                     <ul className="list">
                         <li><a href="/Home" className="anchorsame" style={props.dk}>Home</a></li>
                         <li><a href="/Home" className="anchorsame" style={props.dk}>About</a></li>

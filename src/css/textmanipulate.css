@@ -2,6 +2,11 @@
 *{
     margin: 5px; 
 }
+/* for alert for darkmode */
+.message{
+    font-weight: bold;
+    text-align: center;
+}
 /* main parent */
 .txtparent{
     /* border: 2px solid black; */
@@ -46,6 +51,11 @@
 .botn{
     border-radius: 6px;
     cursor: pointer;
+}
+/* for alert */
+.alrt{
+    text-align: center;
+    /* font-weight: bold; */
 }
 /* child 2 */
 .child2{
