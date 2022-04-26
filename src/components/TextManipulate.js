@@ -45,17 +45,17 @@ export default function TextManipulate(props) {
             <div className="mainbutton" style={props.dk}>
                 {/* button to convert to uppercase */}
                 <div className="btn btn1">
-                    <button onClick={ck} className="botn">Uppercase</button>
+                    <button onClick={ck} className="botn" style={props.btnclr}>Uppercase</button>
                 </div>
                 {/* button to convert to bold */}
                 <div className="btn btn2">
-                    <button onClick={boold} className="botn">Bold</button>
+                    <button onClick={boold} className="botn" style={props.btnclr}>Bold</button>
                 </div>
                 <div className="btn btn3">
-                    <button onClick={bld} className="botn">Light</button>
+                    <button onClick={bld} className="botn" style={props.btnclr}>Light</button>
                 </div>
                 <div className="btn btn4">
-                    <button onClick={low} className="botn">Lowercase</button>
+                    <button onClick={low} className="botn" style={props.btnclr}>Lowercase</button>
                 </div>
             </div>
           </div>
