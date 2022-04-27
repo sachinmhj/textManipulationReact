@@ -23,6 +23,7 @@ function App() {
       document.body.style.backgroundColor = "black";
       setbtncolor({backgroundColor: "#413838", color: "white"});
       setmsg("Congrats!!! you have enabled mode");
+      setmsg("Congrats!!! you have enabled Darkmode");
       setTimeout(() => {
         setmsg(null);
       }, 1500);
