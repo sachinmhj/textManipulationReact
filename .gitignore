@@ -1,6 +1,7 @@
 
 # dependencies
 /node_modules
+/src/components/rough
 /.pnp
 .pnp.js
 .next

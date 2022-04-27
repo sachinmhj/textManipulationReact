@@ -8,10 +8,10 @@ export default function OrgnavOrgnav(props) {
                 </div>
                 <div className="nav" style={props.dk}>
                     <ul className="list">
-                        <li><a href="/Home" className="anchorsame" style={props.dk}>Home</a></li>
-                        <li><a href="/Home" className="anchorsame" style={props.dk}>About</a></li>
-                        <li><a href="/Home" className="anchorsame" style={props.dk}>Courses</a></li>
-                        <li><a href="/Home" className="anchorsame" style={props.dk}>Contact</a></li>
+                        <li><a href="/" className="anchorsame" style={props.dk}>Home</a></li>
+                        <li><a href="/" className="anchorsame" style={props.dk}>About</a></li>
+                        <li><a href="/" className="anchorsame" style={props.dk}>Courses</a></li>
+                        <li><a href="/" className="anchorsame" style={props.dk}>Contact</a></li>
                     </ul>
                     <div className="mainbox">
                         <p id="unik">Enable Darkmode Of Your Choice</p>
