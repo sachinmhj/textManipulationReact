@@ -1,17 +1,17 @@
-// import Navb from "./components/Navb.js";
-// import MyNavBar from "./components/MyNavBar.js";
-// import IncreDec from "./components/IncreDec.js";
+// import Navb from "./components/darkmodeProject/Navb.js";
+// import MyNavBar from "./components/darkmodeProject/MyNavBar.js";
+// import IncreDec from "./components/darkmodeProject/IncreDec.js";
 // import "./css/navbr.css";
-// import TrialProps from "./components/TrialProps";
-// import DarkMode from "./components/DarkMode";
+// import TrialProps from "./components/darkmodeProject/TrialProps";
+// import DarkMode from "./components/darkmodeProject/DarkMode";
 
 import { useState } from "react";
 
-import Orgnav from "./components/Orgnav";
-import "./css/orgnav.css";
+import Orgnav from "./components/darkmodeProject/Orgnav";
+import "./css/cssForDarkmodeProject/orgnav.css";
 
-import TextManipulate from "./components/TextManipulate";
-import "./css/textmanipulate.css";
+import TextManipulate from "./components/darkmodeProject/TextManipulate";
+import "./css/cssForDarkmodeProject/textmanipulate.css";
 
 function App() {
   // for darkmode
