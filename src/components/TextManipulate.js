@@ -23,7 +23,8 @@ export default function TextManipulate(props) {
         };
         setColr(b);
         setalert("Your text is set to bold.");
-    }
+        document.getElementsByTagName("p")[0].dangerouslySetInnerHTML="hi";
+       }
     // for light 
     let bld=()=>{
         setColr({fontWeight: "normal"});

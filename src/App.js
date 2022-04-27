@@ -26,6 +26,7 @@ function App() {
       setTimeout(() => {
         setmsg(null);
       }, 1500);
+      document.title="React.Darkmode";
     }
     let boxx2=()=>{
       setbx1({color: "black", backgroundColor: "white", borderColor: "green"});
