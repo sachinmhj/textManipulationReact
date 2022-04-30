@@ -5,6 +5,7 @@
 // import TrialProps from "./components/darkmodeProject/TrialProps";
 // import DarkMode from "./components/darkmodeProject/DarkMode";
 
+
 import { useState } from "react";
 
 import Orgnav from "./components/darkmodeProject/Orgnav";
@@ -96,14 +97,9 @@ export default App;
 
 
 
-// virtual DOM
-// useeffect
-// routing
-// state
 
-// usestate iscollapsed
-// icons for react
-// conditional rendering
+
+
 
 
 
