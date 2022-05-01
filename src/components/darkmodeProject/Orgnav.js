@@ -8,7 +8,7 @@ export default function OrgnavOrgnav(props) {
                 </div>
                 <div className="nav" style={props.dk}>
                     <ul className="list">
-                        <li><a href="/" className="anchorsame" style={props.dk}>Hom</a></li>
+                        <li><a href="/" className="anchorsame" style={props.dk}>Home</a></li>
                         <li><a href="/" className="anchorsame" style={props.dk}>Abou</a></li>
                         <li><a href="/" className="anchorsame" style={props.dk}>Courses</a></li>
                         <li><a href="/" className="anchorsame" style={props.dk}>Contact</a></li>
