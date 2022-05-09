@@ -1,9 +1,9 @@
-// import Navb from "./components/darkmodeProject/Navb.js";
-// import MyNavBar from "./components/darkmodeProject/MyNavBar.js";
-// import IncreDec from "./components/darkmodeProject/IncreDec.js";
+// import Navb from "./components/extra/Navb.js";
+// import MyNavBar from "./components/extra/MyNavBar.js";
+// import IncreDec from "./components/extra/IncreDec.js";
 // import "./css/navbr.css";
-// import TrialProps from "./components/darkmodeProject/TrialProps";
-// import DarkMode from "./components/darkmodeProject/DarkMode";
+// import TrialProps from "./components/extra/TrialProps";
+// import DarkMode from "./components/extra/DarkMode";
 
 
 import { useState } from "react";
