@@ -14,6 +14,12 @@ import "./css/cssForDarkmodeProject/orgnav.css";
 import TextManipulate from "./components/darkmodeProject/TextManipulate";
 import "./css/cssForDarkmodeProject/textmanipulate.css";
 
+// for routing
+import {BrowserRouter, Route, Routes} from "react-router-dom";
+import About from "./components/navbarpage/About";
+import Contact from "./components/navbarpage/Contact";
+import ErrorPage from "./components/navbarpage/ErrorPage";
+
 function App() {
   // for darkmode
   const [bx1,setbx1]=useState({color: "black", backgroundColor: "white"});
@@ -23,7 +29,6 @@ function App() {
       setbx1({color: "white", backgroundColor: "black", borderColor: "green"});
       document.body.style.backgroundColor = "black";
       setbtncolor({backgroundColor: "#413838", color: "white"});
-      setmsg("Congrats!!! you have enabled mode");
       setmsg("Congrats!!! you have enabled Darkmode");
       setTimeout(() => {
         setmsg(null);
@@ -64,8 +69,15 @@ function App() {
       {/* <IncreDec/>  */}
       {/* <TrialProps con="convert"/> */}
       {/* <DarkMode/> */}
+      <BrowserRouter>
       <Orgnav dk={bx1} ck1={boxx1} ck2={boxx2} ck3={boxx3} ck4={boxx4}/>
-      <TextManipulate dk={bx1} btnclr={btncolor} mesaze={msg}/>
+      <Routes>
+        <Route path="/" element={<TextManipulate dk={bx1} btnclr={btncolor} mesaze={msg}/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="*" element={<ErrorPage/>}/>
+      </Routes>
+      </BrowserRouter>
     </>
   );
 }

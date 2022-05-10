@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 // import "./css/textmanipulate.css";                      //don't import css file inside other components like here. always import it in App.js file.
 export default function OrgnavOrgnav(props) {
     return (
@@ -8,10 +10,9 @@ export default function OrgnavOrgnav(props) {
                 </div>
                 <div className="nav" style={props.dk}>
                     <ul className="list">
-                        <li><a href="/" className="anchorsame" style={props.dk}>Home</a></li>
-                        <li><a href="/" className="anchorsame" style={props.dk}>About</a></li>
-                        <li><a href="/" className="anchorsame" style={props.dk}>Courses</a></li>
-                        <li><a href="/" className="anchorsame" style={props.dk}>Contact</a></li>
+                        <li><NavLink to="/" className="anchorsame" style={props.dk}>Home</NavLink></li>
+                        <li><NavLink to="/about" className="anchorsame" style={props.dk}>About</NavLink></li>
+                        <li><NavLink to="/contact" className="anchorsame" style={props.dk}>Contact</NavLink></li>
                     </ul>
                     <div className="mainbox">
                         <p id="unik">Enable Darkmode Of Your Choice</p>

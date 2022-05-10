@@ -34,19 +34,14 @@
 /* li{
     align-items: center;
 } */
-a{
+.anchorsame{
     text-decoration: none;
 }
-/* .anchorsame{
-    margin: 5px;
-    padding: 5px;
-} */
 li:hover{
     color: black;
-    background-color: rgb(146, 173, 135);
     border-radius: 4px;
     border-style: solid;
-    border-color: black;
+    border-color: rgb(102, 98, 98);
     border-width: 2px 0px;
 }
 /* checkbox */
