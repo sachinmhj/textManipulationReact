@@ -1,5 +1,5 @@
 export default function ErrorPage() {
   return (
-    <div>Sorry, Page not found</div>
+    <div className="errpage">Sorry, Page not found</div>
   )
 }
