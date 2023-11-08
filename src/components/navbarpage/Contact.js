@@ -20,6 +20,9 @@ export default function Contact(props) {
             <label htmlFor="eml">Email</label><br />
             <input style={props.dk} type="text" name="eml" id="eml" placeholder="Enter your Email address" />
           </div>
+          <div className="sib">
+            <button>Submit</button>
+          </div>
         </div>
       </div>
     </form>

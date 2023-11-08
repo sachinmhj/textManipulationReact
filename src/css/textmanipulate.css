@@ -1,84 +1,177 @@
 /* universal */
-*{
-    margin: 5px; 
+* {
+    margin: 5px;
 }
+
 /* for alert for darkmode */
-.message{
+.message {
     height: 20px;
     font-weight: bold;
     text-align: center;
 }
+
 /* main parent */
-.txtparent{
+.txtparent {
     /* border: 2px solid black; */
     display: flex;
     justify-content: space-between;
 }
+
 /* childs of parent */
 /* child 1 */
-.txtchild{
+.txtchild {
     border: 1px solid red;
     border-radius: 26px;
     display: flex;
     flex-direction: column;
 }
-.child1{
+
+.child1 {
     width: 30%;
 }
+
 /* for textarea box */
 /* .txtarea{
     border: 1px solid green;
 } */
-.textareabox{
+.textareabox {
     display: block;
     width: 80%;
     margin: 2px auto;
     border-radius: 8px;
 }
-.txtareaheading{
-    width: 400px;
+
+.txtareaheading {
     margin: 2px auto;
     text-align: center;
 }
+
 /* for outputs */
 /* .textoutput{
     border: 1px solid yellow;
 } */
 /* for buttons */
-.mainbutton{
+.mainbutton {
     /* border: 1px solid brown; */
     display: flex;
 }
-.botn{
+
+.botn {
     border-radius: 6px;
     cursor: pointer;
 }
+
 /* for alert */
-.alrt{
+.alrt {
     text-align: center;
     /* font-weight: bold; */
 }
+
 /* child 2 */
-.child2{
+.child2 {
     width: 60%;
 }
-#headingpreview{
+
+#headingpreview {
     width: 300px;
-    margin: 2px auto;                                     /* when you use only auto it comes to center from left-right and from top-bottom as well check yourself. */
+    margin: 2px auto;
+    /* when you use only auto it comes to center from left-right and from top-bottom as well check yourself. */
     text-align: center;
 }
-.txtpreview{
+
+.txtpreview {
     border: solid 1px purple;
     border-bottom-left-radius: 26px;
     border-bottom-right-radius: 26px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     height: 100%;
+    text-align: center;
 }
 /* child 3 */
 /* .rightsidetxt{
 
 } */
-.para{
+.para {
     border: 1px solid blueviolet;
+}
+
+@media screen and (max-width: 1162px) {
+    .mainbutton {
+        flex-direction: column;
+        align-items: center;
+    }
+    .qt_main{
+        flex-direction: column !important;
+        height: 55vh !important;
+    }
+    .forpara{
+        width: auto !important;
+        margin: 0 auto !important;
+        margin-bottom: 10px !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .textoutput{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .child1{
+        width: 100%;
+    }
+    .txtparent{
+        flex-direction: column;
+    }
+    .child2{
+        width: 100%;
+    }
+    .txtpreview{
+        border: none;
+    }
+    .rightsidetxt{
+        display: none;
+    }
+    #unik{
+        width: auto;
+    }
+    .list{
+        width: auto;
+        text-align: center;
+        padding: 0px;
+    }
+    .mainbox{
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 545px) {
+    .nav{
+        flex-direction: column;
+    }
+    .mainbox{
+        padding: 0%;
+        margin: 2px !important;
+    }
+    #headingpreview{
+        width: auto;
+    }
+    .list{
+        flex-direction: column;
+    }
+
+    /* for contact */
+    .cld{
+        width: auto !important;
+    }
+    input{
+        width: auto !important;
+    }
+
+    /* for quotes */
+    .forimage{
+        width: 150px !important;
+    }
 }

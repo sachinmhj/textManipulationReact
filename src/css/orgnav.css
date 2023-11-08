@@ -34,6 +34,11 @@
 /* li{
     align-items: center;
 } */
+.list li{
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    border-radius: 6px;
+}
 .anchorsame{
     text-decoration: none;
 }

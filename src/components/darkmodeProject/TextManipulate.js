@@ -74,7 +74,7 @@ export default function TextManipulate(props) {
               {/* box to preview the contents of text area */}
               <h2 id="headingpreview">Play With Words</h2>
               <div className="txtpreview" style={Object.assign({}, colr, props.dk)}>   {/* understand this line yourself */}
-                  {txt.length<=0? "Enter something to preview": txt}
+                  {txt.length<=0? "Nothing to preview": txt}
               </div>
           </div>
           {/* child box 3 */}
