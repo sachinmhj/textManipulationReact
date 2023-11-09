@@ -21,7 +21,7 @@ export default function Contact(props) {
             <input style={props.dk} type="text" name="eml" id="eml" placeholder="Enter your Email address" />
           </div>
           <div className="sib">
-            <button onClick={() => {}} style={{"color":"white","background":"black","cursor":"pointer"}}>Submit</button>
+            <a href="/" style={{"color":"white","background":"black","cursor":"pointer","text-decoration":"none","border":"2px solid black","borderRadius":"4px"}}>Submit</a>
           </div>
         </div>
       </div>
