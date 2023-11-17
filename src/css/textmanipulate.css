@@ -3,30 +3,35 @@
     background-color: #dffffb !important;
     margin: 1rem auto !important;
 }
-.navbutton{
+
+.navbutton {
     border: 1px solid;
     border-radius: 0.5rem;
 }
-.bord{
+
+.bord {
     border-radius: 0.5rem;
 }
-.btnhov:hover{
+
+.btnhov:hover {
     background-color: rgb(183 182 255) !important;
 }
-.ctpreview{
+
+.ctpreview {
     background-color: #dffffb !important;
     padding: 1rem;
     margin-top: 2rem !important;
     margin-bottom: 1rem !important;
 }
-.cttxt{
+
+.cttxt {
     background-color: #a5f9ee !important;
     padding: 2rem;
     border-color: #dffffb !important;
 }
 
 /* for popup message */
-.pop{
+.pop {
     padding-top: 0.5rem;
     height: 2rem;
     /* border: 2px solid green; */
@@ -34,59 +39,58 @@
 
 /* for responsiveness */
 @media screen and (max-width: 991px) {
-    .navbar-toggler{
+    .navbar-toggler {
         background-color: #acfffc !important;
         margin: 0.5rem;
     }
-    li.nav-item{
+
+    li.nav-item {
         margin: 0.2rem !important;
     }
-    .ctpara{
+
+    .ctpara {
         font-size: 1rem;
     }
-    .ctgroup{
+
+    .ctgroup {
         width: 100% !important;
     }
-    .ct-alert{
+
+    .ct-alert {
         font-size: small;
     }
+
     /* for contact page */
-    .ct-boxes{
+    .ct-boxes {
         width: 50% !important;
     }
+
     /* for quotes page */
-    .qt_main{
-        flex-direction: column !important;
-        justify-content: space-evenly !important;
-        align-items: center !important;
-    }
-    .forimage{
-        margin: 0 !important;
-    }
-    .forpara{
-        margin: 0 !important;
-        width: auto !important;
+    .forimage {
+        width: 75% !important;
+        height: 40vh !important;
     }
 }
+
 @media screen and (max-width: 480px) {
-    .btnhov{
+    .btnhov {
         width: 40% !important;
         font-size: 0.7rem !important;
     }
-    /* for quotes page */
-    .forimage{
-        width: 80% !important;
-        height: 35vh !important;
-    }
-    .forpara{
-        padding: 1rem;
-    }
 }
+
 @media screen and (max-width: 320px) {
-    .btnhov{
+    .btnhov {
         width: 75% !important;
     }
-    .ct-boxes{
+
+    .ct-boxes {
         width: 60% !important;
+    }
+
+    /* for quotes page */
+    .forimage {
+        width: 98% !important;
+        height: 30vh !important;
     }
 }

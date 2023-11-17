@@ -98,7 +98,7 @@ function App() {
         <Orgnav dk={bx1} ck1={boxx1} ck2={boxx2} ck3={boxx3} ck4={boxx4} ap={apee} />
         <Routes>
           <Route path="/" element={<TextManipulate dk={bx1} btnclr={btncolor} mesaze={msg} />} />
-          <Route path="/quote" element={<Quote qotes={daeta} ig={imag} />} />
+          <Route path="/quote" element={<Quote qotes={daeta} ig={imag} ap={apee} />} />
           <Route path="/contact" element={<Contact dk={bx1} />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
