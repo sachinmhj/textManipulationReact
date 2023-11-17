@@ -50,15 +50,43 @@
     .ct-alert{
         font-size: small;
     }
+    /* for contact page */
+    .ct-boxes{
+        width: 50% !important;
+    }
+    /* for quotes page */
+    .qt_main{
+        flex-direction: column !important;
+        justify-content: space-evenly !important;
+        align-items: center !important;
+    }
+    .forimage{
+        margin: 0 !important;
+    }
+    .forpara{
+        margin: 0 !important;
+        width: auto !important;
+    }
 }
 @media screen and (max-width: 480px) {
     .btnhov{
         width: 40% !important;
         font-size: 0.7rem !important;
     }
+    /* for quotes page */
+    .forimage{
+        width: 80% !important;
+        height: 35vh !important;
+    }
+    .forpara{
+        padding: 1rem;
+    }
 }
 @media screen and (max-width: 320px) {
     .btnhov{
         width: 75% !important;
+    }
+    .ct-boxes{
+        width: 60% !important;
     }
 }

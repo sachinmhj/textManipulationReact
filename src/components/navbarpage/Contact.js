@@ -3,19 +3,19 @@ export default function Contact(props) {
   return (
     <form>
       <div className="container text-center w-75 m-5 mx-auto border border-dark ct-contact rounded p-3">
-      <div class="my-3 w-25 mx-auto">
-        <label for="naam" class="form-label">Name</label>
-        <input type="text" class="form-control" id="naam"/>
+      <div className="my-3 w-25 mx-auto ct-boxes">
+        <label htmlFor="naam" className="form-label">Name</label>
+        <input type="text" className="form-control" id="naam"/>
       </div>
-      <div class="my-3 w-25 mx-auto">
-        <label for="loc" class="form-label">Location</label>
-        <input type="text" class="form-control" id="loc"/>
+      <div className="my-3 w-25 mx-auto ct-boxes">
+        <label htmlFor="loc" className="form-label">Location</label>
+        <input type="text" className="form-control" id="loc"/>
       </div>
-      <div class="my-3 w-25 mx-auto">
-        <label for="Email1" class="form-label">Email</label>
-        <input type="email" class="form-control" id="Email1"/>
+      <div className="my-3 w-25 mx-auto ct-boxes">
+        <label htmlFor="Email1" className="form-label">Email</label>
+        <input type="email" className="form-control" id="Email1"/>
       </div>
-      <button type="button" class="btn btn-secondary my-1">Submit</button>
+      <button type="button" className="btn btn-secondary my-1">Submit</button>
       </div>
     </form>
 
