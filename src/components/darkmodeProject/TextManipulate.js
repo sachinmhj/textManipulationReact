@@ -1,101 +1,73 @@
-import {useState} from 'react';
+import { useState } from 'react';
 export default function TextManipulate(props) {
     // for text manipulation
-    const [txt,setTxt] = useState ("");
-    const [colr,setColr] = useState ({fontWeight: "light"});
+    const [txt, setTxt] = useState("");
+    const [fontWeight, setfontWeight] = useState("normal");
     // for alert when text manipulated
-    const [alert, setalert]=useState("Click on any buttons to manipulate the text.");
-    let changed=(event)=>{    
+    const [alert, setalert] = useState("Click buttons to manipulate text.");
+    let changed = (event) => {
         setTxt(event.target.value);             //remember this line to make textarea work.
     }
-    let ck=()=>{
+    let ck = () => {
         setTxt(txt.toUpperCase());
         setalert("Your text is converted to uppercase.");
     }
-    let low=()=>{
+    let low = () => {
         setTxt(txt.toLowerCase());
         setalert("Your text is converted to lowercase.");
-    } 
+    }
     // for bold
-    let boold=()=>{
-        let b={
-            fontWeight: "bold"
-        };
-        setColr(b);
+    let boold = () => {
+        setfontWeight("bold");
         setalert("Your text is set to bold.");
-       }
+    }
     // for light 
-    let bld=()=>{
-        setColr({fontWeight: "normal"});
+    let bld = () => {
+        setfontWeight("normal");
         setalert("Your text is set to light.");
     }
     // for total words and characters
+    // for total words and characters
     let num2 = txt.length;
-    let num1 = (txt.split(" ")).length-1;
-  return (
-      <>
-      <div className="message" style={props.dk}>{props.mesaze}</div>
-      {/* parent box */}
-      <div className="txtparent" style={props.dk}>
-          {/* child box 1 */}
-          <div className="txtchild child1" style={props.dk}>
-            {/* box for text area */}
-            <div className="txtarea" style={props.dk}>
-                <h2 className="txtareaheading">Enter your text here</h2>
-                <textarea name="textarea" className="textareabox" value={txt}  style={props.dk} onChange={changed} cols="30" rows="10"></textarea>
+    let num1 = (txt.match(/\S+/g) || []).length;
+    return (
+        <>
+            <div className="text-center pop text-success" style={props.dk}>{props.mesaze}</div>
+            {/* parent box */}
+            <div className="container d-flex flex-column" style={props.dk}>
+                {/* child box 1 */}
+                <div className="container d-flex flex-column justify-content-center align-items-center" style={props.dk}>
+                    {/* box for text area */}
+                    <div className="w-100" style={props.dk}>
+                        <h2 className="text-center">Enter your text here</h2>
+                        <textarea name="textarea" className="form-control textareabox my-2" value={txt} style={Object.assign({}, {"fontWeight":fontWeight}, props.dk)} onChange={changed}></textarea>
+                    </div>
+                    {/* box to output total words and characters of text area */}
+                    <div className="container border w-50 rounded m-2 text-dark ctgroup" style={props.dk}>
+                        <p className='text-center ctpara'>Total Words({num1})</p>
+                        <p className='text-center ctpara'>Total Characters({num2})</p>
+                    </div>
+                    {/* box for buttons */}
+                    <div className="container d-flex flex-column" style={props.dk}>
+                        {/* button to convert to uppercase */}
+                        <button type="button" onClick={ck} className="btn btn-info w-25 m-1 mx-auto rounded btnhov" style={props.btnclr}>Uppercase</button>
+                        {/* button to convert to bold */}
+                        <button type="button" onClick={boold} className="btn btn-info w-25 m-1 mx-auto rounded btnhov" style={props.btnclr}>Bold</button>
+                        <button type="button" onClick={bld} className="btn btn-info w-25 m-1 mx-auto rounded btnhov" style={props.btnclr}>Light</button>
+                        <button type="button" onClick={low} className="btn btn-info w-25 m-1 mx-auto rounded btnhov" style={props.btnclr}>Lowercase</button>
+                    </div>
+                    {/* for alert */}
+                    <div className="text-center ct-alert">{alert}</div>
+                </div>
+                {/* child box 2 */}
+                <div className="container rounded ctpreview" style={props.dk}>
+                    {/* box to preview the contents of text area */}
+                    <h2 className='text-center m-1'>Preview Your Text</h2>
+                    <div className="container text-center border border-dark rounded h-75 mb-1 cttxt w-75" style={Object.assign({}, {"fontWeight":fontWeight}, props.dk)}>   {/* understand this line yourself */}
+                        {txt.length <= 0 ? "Nothing to preview" : txt}
+                    </div>
+                </div>
             </div>
-            {/* box to output total words and characters of text area */}
-            <div className="textoutput" style={props.dk}>
-                    <p>Total Words({num1})</p>
-                    <p>Total Characters({num2})</p>
-            </div>
-            {/* box for buttons */}
-            <div className="mainbutton" style={props.dk}>
-                {/* button to convert to uppercase */}
-                <div className="btn btn1">
-                    <button onClick={ck} className="botn" style={props.btnclr}>Uppercase</button>
-                </div>
-                {/* button to convert to bold */}
-                <div className="btn btn2">
-                    <button onClick={boold} className="botn" style={props.btnclr}>Bold</button>
-                </div>
-                <div className="btn btn3">
-                    <button onClick={bld} className="botn" style={props.btnclr}>Light</button>
-                </div>
-                <div className="btn btn4">
-                    <button onClick={low} className="botn" style={props.btnclr}>Lowercase</button>
-                </div>
-            </div>
-            {/* for alert */}
-            <div className="alrt">{alert}</div>
-          </div>
-          {/* child box 2 */}
-          <div className="txtchild child2" style={props.dk}>
-              {/* box to preview the contents of text area */}
-              <h2 id="headingpreview">Play With Words</h2>
-              <div className="txtpreview" style={Object.assign({}, colr, props.dk)}>   {/* understand this line yourself */}
-                  {txt.length<=0? "Nothing to preview": txt}
-              </div>
-          </div>
-          {/* child box 3 */}
-          <div className="rightsidetxt">
-              <p className="para">P</p>
-              <p className="para">L</p>
-              <p className="para">A</p>
-              <p className="para">Y</p>
-              <p className="para"> </p>
-              <p className="para">W</p>
-              <p className="para">I</p>
-              <p className="para">T</p>
-              <p className="para">H</p>
-              <p className="para"> </p>
-              <p className="para">W</p>
-              <p className="para">O</p>
-              <p className="para">R</p>
-              <p className="para">D</p>
-              <p className="para">S</p>
-          </div>
-      </div>
-      </>
-  )
+        </>
+    )
 }

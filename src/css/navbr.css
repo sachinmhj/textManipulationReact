@@ -1,14 +1,14 @@
-.onee{
+/* .onee{
     height: 100vh;
     display: flex;
     flex-direction: row;
 }
 
-/* navbar */
+navbar
 ul{
     display: flex;
     flex-direction: column;
-    /* border: 2px solid black; */
+    border: 2px solid black;
     justify-content: space-evenly;
     margin: 0px;
     width:600px;
@@ -25,21 +25,21 @@ ul li a{
     font-size: 150%;
 }
 
-/* hover */
+hover
 ul li a:hover{
     color: green;
 }
 
-/* search-box */
+search-box
 header input{
-    /* border: 2px solid red; */
+    border: 2px solid red;
     font-size: 20px;
     font-weight: bold;
     width: 156px;
     border-radius: 12px;
 } 
 
-/* header */
+header
 header{
     display: flex;
     flex-direction: column;
@@ -51,23 +51,23 @@ header{
     width: 250px;
 }
 
-/* image */
+image
 img{
     margin-left: 76px;
     width: 66px;
     height: 50px;
 }
 
-/* hide button */
-/* button{
+hide button
+button{
     position: absolute;
     top: 56px;
     left: 8px;
     height: 42px;
     border-radius: 18px;
-} */
+}
 
-/* body */
+body
 .bod{
     display: flex;
     flex-direction: column;
@@ -107,7 +107,7 @@ h1{
     background-color: rgb(213, 236, 236);
 }
 
-/* rightside layout */
+rightside layout
 .car{
     margin: 0px;
     padding: 10px;
@@ -115,4 +115,4 @@ h1{
     border: 2px solid brown;
     border-radius: 10px;
     height: 96vh;
-}
+} */

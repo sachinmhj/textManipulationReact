@@ -29,32 +29,32 @@ import ErrorPage from "./components/navbarpage/ErrorPage";
 function App() {
   // for darkmode
   const [bx1, setbx1] = useState({ color: "black", backgroundColor: "white" });
-  const [btncolor, setbtncolor] = useState({ backgroundColor: "white" });
+  const [btncolor, setbtncolor] = useState({ backgroundColor: "#c7aeff" });
   const [msg, setmsg] = useState(null);
   let boxx1 = () => {
-    setbx1({ color: "white", backgroundColor: "black", borderColor: "green" });
-    document.body.style.backgroundColor = "black";
+    setbx1({ color: "black", backgroundColor: "grey", borderColor: "green" });
+    document.body.style.backgroundColor = "grey";
     setbtncolor({ backgroundColor: "#413838", color: "white" });
-    setmsg("Congrats!!! you have enabled Darkmode");
+    setmsg("You have enabled Darkmode");
     setTimeout(() => {
       setmsg(null);
     }, 1500);
-    document.title = "React.Darkmode";
+    document.title = "React Darkmode";
   }
   let boxx2 = () => {
     setbx1({ color: "black", backgroundColor: "white", borderColor: "green" });
     document.body.style.backgroundColor = "white";
-    setbtncolor({ backgroundColor: "#e0fb6e" });
-    setmsg("Congrats!!! you selected color mode as white");
+    setbtncolor({ backgroundColor: "rgb(164 205 249)" });
+    setmsg("You have enabled Lightmode");
     setTimeout(() => {
       setmsg(null);
     }, 1500);
   }
   let boxx3 = () => {
-    setbx1({ color: "black", backgroundColor: "rgb(126, 1, 1)", borderColor: "green" });
-    document.body.style.backgroundColor = "rgb(126, 1, 1)";
-    setbtncolor({ backgroundColor: "#ae2fba" });
-    setmsg("Congrats!!! you selected color mode as darkred");
+    setbx1({ color: "black", backgroundColor: "#66d6ff", borderColor: "green" });
+    document.body.style.backgroundColor = "#66d6ff";
+    setbtncolor({ backgroundColor: "rgb(141 143 202)" });
+    setmsg("You selected color mode as darkBlue");
     setTimeout(() => {
       setmsg(null);
     }, 1500);
@@ -62,8 +62,8 @@ function App() {
   let boxx4 = () => {
     setbx1({ color: "black", backgroundColor: "yellow", borderColor: "green" });
     document.body.style.backgroundColor = "yellow";
-    setbtncolor({ backgroundColor: "#de3232" });
-    setmsg("Congrats!!! you selected color mode as yellow");
+    setbtncolor({ backgroundColor: "rgb(206 163 81)" });
+    setmsg("You selected color mode as yellow");
     setTimeout(() => {
       setmsg(null);
     }, 1500);

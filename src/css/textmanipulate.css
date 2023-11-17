@@ -1,177 +1,64 @@
-/* universal */
-* {
-    margin: 5px;
-}
-
-/* for alert for darkmode */
-.message {
-    height: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-
-/* main parent */
-.txtparent {
-    /* border: 2px solid black; */
-    display: flex;
-    justify-content: space-between;
-}
-
-/* childs of parent */
-/* child 1 */
-.txtchild {
-    border: 1px solid red;
-    border-radius: 26px;
-    display: flex;
-    flex-direction: column;
-}
-
-.child1 {
-    width: 30%;
-}
-
-/* for textarea box */
-/* .txtarea{
-    border: 1px solid green;
-} */
 .textareabox {
-    display: block;
-    width: 80%;
-    margin: 2px auto;
-    border-radius: 8px;
+    height: 50vh;
+    background-color: #dffffb !important;
+    margin: 1rem auto !important;
+}
+.navbutton{
+    border: 1px solid;
+    border-radius: 0.5rem;
+}
+.bord{
+    border-radius: 0.5rem;
+}
+.btnhov:hover{
+    background-color: rgb(183 182 255) !important;
+}
+.ctpreview{
+    background-color: #dffffb !important;
+    padding: 1rem;
+    margin-top: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+.cttxt{
+    background-color: #a5f9ee !important;
+    padding: 2rem;
+    border-color: #dffffb !important;
 }
 
-.txtareaheading {
-    margin: 2px auto;
-    text-align: center;
+/* for popup message */
+.pop{
+    padding-top: 0.5rem;
+    height: 2rem;
+    /* border: 2px solid green; */
 }
 
-/* for outputs */
-/* .textoutput{
-    border: 1px solid yellow;
-} */
-/* for buttons */
-.mainbutton {
-    /* border: 1px solid brown; */
-    display: flex;
-}
-
-.botn {
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-/* for alert */
-.alrt {
-    text-align: center;
-    /* font-weight: bold; */
-}
-
-/* child 2 */
-.child2 {
-    width: 60%;
-}
-
-#headingpreview {
-    width: 300px;
-    margin: 2px auto;
-    /* when you use only auto it comes to center from left-right and from top-bottom as well check yourself. */
-    text-align: center;
-}
-
-.txtpreview {
-    border: solid 1px purple;
-    border-bottom-left-radius: 26px;
-    border-bottom-right-radius: 26px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    height: 100%;
-    text-align: center;
-}
-/* child 3 */
-/* .rightsidetxt{
-
-} */
-.para {
-    border: 1px solid blueviolet;
-}
-
-@media screen and (max-width: 1162px) {
-    .mainbutton {
-        flex-direction: column;
-        align-items: center;
+/* for responsiveness */
+@media screen and (max-width: 991px) {
+    .navbar-toggler{
+        background-color: #acfffc !important;
+        margin: 0.5rem;
     }
-    .qt_main{
-        flex-direction: column !important;
-        height: 55vh !important;
+    li.nav-item{
+        margin: 0.2rem !important;
     }
-    .forpara{
-        width: auto !important;
-        margin: 0 auto !important;
-        margin-bottom: 10px !important;
+    .ctpara{
+        font-size: 1rem;
+    }
+    .ctgroup{
+        width: 100% !important;
+    }
+    .ct-alert{
+        font-size: small;
     }
 }
-
-@media screen and (max-width: 1024px) {
-    .textoutput{
-        text-align: center;
+@media screen and (max-width: 480px) {
+    .btnhov{
+        width: 40% !important;
+        font-size: 0.7rem !important;
     }
 }
-
-@media screen and (max-width: 740px) {
-    .child1{
-        width: 100%;
-    }
-    .txtparent{
-        flex-direction: column;
-    }
-    .child2{
-        width: 100%;
-    }
-    .txtpreview{
-        border: none;
-    }
-    .rightsidetxt{
-        display: none;
-    }
-    #unik{
-        width: auto;
-    }
-    .list{
-        width: auto;
-        text-align: center;
-        padding: 0px;
-    }
-    .mainbox{
-        width: auto;
-    }
-}
-
-@media screen and (max-width: 545px) {
-    .nav{
-        flex-direction: column;
-    }
-    .mainbox{
-        padding: 0%;
-        margin: 2px !important;
-    }
-    #headingpreview{
-        width: auto;
-    }
-    .list{
-        flex-direction: column;
-    }
-
-    /* for contact */
-    .cld{
-        width: auto !important;
-    }
-    input{
-        width: auto !important;
-    }
-
-    /* for quotes */
-    .forimage{
-        width: 150px !important;
+@media screen and (max-width: 320px) {
+    .btnhov{
+        width: 75% !important;
     }
 }
